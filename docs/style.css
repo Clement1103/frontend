@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebf1ff;
+    color: #333;
+}
+
+/* Styles pour le bandeau */
+header {
+    background: linear-gradient(to right, #eafdfe, #bfc8fd);
+    color: #516fa9;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Styles pour le bandeau de navigation */
+nav {
+    display: flex;
+    align-items: center; /* Aligne verticalement le contenu */
+    background-color: #516fa9; /* Couleur du bandeau de navigation */
+    padding: 1em; /* Espacement interne plus grand pour agrandir le bandeau */
+}
+
+.nav-left {
+    display: flex; /* Affiche les liens en ligne */
+    flex-grow: 1; /* Permet à la section gauche d'occuper l'espace */
+    justify-content: flex-start; /* Aligne les éléments à gauche */
+}
+
+.nav-right {
+    display: flex; /* Affiche les liens en ligne */
+    flex-grow: 1; /* Permet à la section droite d'occuper l'espace */
+    justify-content: center; /* Centre les éléments à droite */
+}
+
+.nav-logo {
+    height: 50px; /* Ajustez la taille du logo */
+    margin: 0 2em; /* Espacement autour du logo */
+}
+
+nav a {
+    color: white;
+    padding: 14px 10px; /* Réduisez la largeur des onglets */
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1; /* Permet aux liens d'occuper tout l'espace disponible */
+    min-width: 100px; /* Largeur minimale pour les onglets */
+}
+
+nav a:hover {
+    background-color: #eafdfe; /* Couleur au survol */
+    color: #000; /* Couleur du texte au survol */
+}
+
+/* Styles pour la section des produits */
+#produits {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+    color: #516fa9;
+}
+
+.produit {
+    background: linear-gradient(to bottom, #eafdfe, #bfc8fd); 
+    padding: 1em;
+    margin: 1.5em; /* Augmente l'espacement entre les produits */
+    border-radius: 15px; /* Arrondi des bordures */
+    text-align: center;
+    width: 250px; /* Ajustez la largeur selon vos besoins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optionnel : Ajoute une ombre */
+}
+
+.produit img {
+    max-width: 100px; /* Ajustez la taille du logo */
+    margin-bottom: 1em;
+}
+
+#chatbot {
+    text-align: left;
+    margin-top: 2em;
+}
+
+/* Style pour Dialogflow Messenger */
+df-messenger {
+    --df-messenger-bot-message: #fff;
+    --df-messenger-button-titlebar-color: #bfc8fd;
+    --df-messenger-button-titlebar-font-color: #fff;
+    --df-messenger-chat-background-color: #e0ebff;
+    --df-messenger-font-color: rgba(0, 0, 0, .87);
+    --df-messenger-input-box-color: #fff;
+    --df-messenger-input-font-color: rgba(0, 0, 0, .87);
+    --df-messenger-input-placeholder-font-color: #757575;
+    --df-messenger-minimized-chat-close-icon-color: #000;
+    --df-messenger-send-icon: #bfc8fd;
+    --df-messenger-user-message: #bfc8fd;
+    --df-messenger-chip-color: #fff;
+    --df-messenger-chip-border-color: #e0e0e0;
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: #ffffff;
+    background-color: #007bff; /* Couleur de fond */
+    border-radius: 5px;
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+.see-more:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}

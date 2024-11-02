@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FictiveDataHealthCompany</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+    <header>
+        <h1>FictiveDataHealthCompany</h1>
+    </header>
+    
+    <nav>
+        <div class="nav-left">
+            <a href="#expertise">Expertise</a>
+            <a href="#mediag">MedIAg</a>
+            <a href="#synthemedix">SyntheMedix</a>
+            <a href="#forecastmed">ForecastMed</a>
+        </div>
+        
+        
+        
+        <div class="nav-right">
+            <a href="#qui-sommes-nous">Who are we?</a>
+            <a href="#actualite">News</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+    <section id="produits">
+        <div class="produit">
+            <img src="images/logo_mediag.png" alt="Logo Produit 1"> 
+            <h2>MedIAg</h2>
+            <p>MedIAg is an AI diagnostic support tool that quickly analyzes imaging, lab results, and patient histories to aid doctors with accurate diagnoses. It integrates into workflows, continuously learning to enhance diagnostic accuracy over time.</p>
+            <a href="javascript:void(0)" class="see-more">See more</a>
+        </div>
+        <div class="produit">
+            <img src="images/logo_synthemedix.png" alt="Logo Produit 2"> 
+            <h2>SyntheMedix</h2>
+            <p>SyntheMedix generates synthetic healthcare data that replicates real data patterns while safeguarding patient privacy. This tool supports research, model training, and clinical studies by providing secure, shareable data to accelerate healthcare innovation.</p>
+            <a href="javascript:void(0)" class="see-more">See more</a>
+        </div>
+        <div class="produit">
+            <img src="images/logo_forecastmed.png" alt="Logo Produit 3"> 
+            <h2>ForecastMed</h2>
+            <p>ForecastMed is a predictive analytics tool that helps healthcare providers anticipate patient       outcomes and optimize care strategies. It leverages medical data and machine learning to improve patient care, streamline resources, and support clinical trials.</p>
+            <a href="javascript:void(0)" class="see-more">See more</a>
+        </div>
+        <div class="produit">
+            <img src="images/logo_customservice.png" alt="Logo Produit 4"> <!-- Remplacez par l'URL de votre logo -->
+            <h2>Custom service</h2>
+            <p>We also offer solutions tailored to your needs. If your request is not directly related to our services, we'd be happy to discuss it with you!</p>
+        </div>
+    </section>
+    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="chatbot_health"
+      agent-id="6e283bce-aca7-40af-980a-e63f427abc27"
+      language-code="en"
+    ></df-messenger>
+    
+</body>
+</html>
+
